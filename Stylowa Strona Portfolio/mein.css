@@ -1,0 +1,16 @@
+
+.heder
+{
+	text-align: center;
+
+}
+.container {
+    height :845px;
+    width: 100%;
+    position:relative;
+}
+.footer
+{
+    position: absolute;
+	bottom: 0;
+}
