@@ -1,29 +1,27 @@
-const box = document.getElementById('display');
+let input = document.getElementById('display');
+let buttons = document.querySelectorAll('button');
 
-function  addToScreen(x){
-    box.value += x;
-    
-    if (x==='c'){
-        box.value = '';
-    }
-}
-function  addToScreenOperator(x){
-    box.value += x;
-    
-    if (x==='c'){
-        box.value = '';
-    }
-}
+let string = "";
+let arr = Array.from(buttons);
+arr.forEach(button => {
+    button.addEventListener('click', (e) =>{
+        if(e.target.innerHTML == '='){
+            string = eval(string);
+            input.value = string;
+        }
 
-function calculateSum() {
-    x = box.value;
-    x = eval(x);
-    box.value = x;
-}
+        else if(e.target.innerHTML == 'C'){
+            string = "";
+            input.value = string;
+        }
+        else if(e.target.innerHTML == 'Ce'){
+            string = string.substring(0, string.length-1);
+            input.value = string;
+        }
+        else{
+            string += e.target.innerHTML;
+            input.value = string;
+        }
 
-function backspace() {
-    var number = box.value;
-    var len = number.length-1;
-    var newnumber = number.substring(0, len);
-    box.value=newnumber;
-}
+    })
+})
