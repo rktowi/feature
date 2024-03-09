@@ -1,14 +1,21 @@
-var box = document.getElementById('display');
+const box = document.getElementById('display');
 
-function addtoscreen(x){
+function  addToScreen(x){
     box.value += x;
     
-    if (x=='c'){
+    if (x==='c'){
+        box.value = '';
+    }
+}
+function  addToScreenOperator(x){
+    box.value += x;
+    
+    if (x==='c'){
         box.value = '';
     }
 }
 
-function suma() {
+function calculateSum() {
     x = box.value;
     x = eval(x);
     box.value = x;
