@@ -5,11 +5,14 @@ let string = "";
 let arr = Array.from(buttons);
 arr.forEach(button => {
     button.addEventListener('click', (e) =>{
-        if(e.target.innerHTML == '='){
-            string = eval(string);
-            input.value = string;
+        if (e.target.innerHTML == '=') {
+            let result = eval(string);
+            if (result === Infinity || isNaN(result)) {
+                input.value = "Błąd";
+            } else {
+                input.value = result;
+            }
         }
-
         else if(e.target.innerHTML == 'C'){
             string = "";
             input.value = string;
