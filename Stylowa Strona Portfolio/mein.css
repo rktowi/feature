@@ -11,7 +11,8 @@ header {
     padding: 1rem;
     text-align: center;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px; 
+    border-top-right-radius: 10px;
+    font-family: 'Arial'
 }
 
 header h1 {
@@ -22,6 +23,7 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: left;
 }
 
 nav li {
