@@ -17,6 +17,7 @@ header {
 
 header h1 {
     margin: 0;
+    font-family: "Madimi One", sans-serif;
 }
 
 nav ul {
@@ -43,10 +44,15 @@ section {
 
 #about {
     background-color: #f0f0f0;
+    font-family: "Mali";
 }
 
 #projects {
     background-color: #e0e0e0;
+    
+}
+#projects h2 {
+    font-family: "Mali";
 }
 
 .project {
