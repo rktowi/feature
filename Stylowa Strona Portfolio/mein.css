@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: 'Arial'
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Madimi One", sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+}
+
+#about {
+    background-color: #f0f0f0;
+    font-family: "Mali";
+}
+
+#projects {
+    background-color: #e0e0e0;
+    
+}
+#projects h2 {
+    font-family: "Mali";
+}
+
+.project {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.project img {
+    max-width: 40%;
+    height: auto;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
